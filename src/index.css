@@ -3,3 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 1200px;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+}
+
+.search-bar {
+  margin-top: 50px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.searched-box {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 500px;
+
+  .searched-list {
+    text-align: left;
+    list-style: none;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}
