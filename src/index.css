@@ -1,44 +1,105 @@
+/* css reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* default css */
 body {
   font-family: 'Trebuchet MS', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* utility */
+.debug {
+  border: 1px dashed red;
 }
 
 .container {
   margin: 50px auto;
   max-width: 1200px;
-  text-align: center;
+}
 
-  h1 {
-    font-size: 2rem;
-    text-decoration: underline;
-  }
+/* search-bar section */
+.title {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.search-box {
+  text-align: center;
 }
 
 .search-bar {
   margin-top: 50px;
   width: 300px;
   padding: 10px;
-  margin-bottom: 10px;
 }
 
 .searched-box {
   border: 1px solid #000;
-  border-radius: 10px;
-  padding: 20px;
   margin: 0 auto;
-  width: 500px;
+  width: 300px;
 
   .searched-list {
     text-align: left;
     list-style: none;
+    width: 100%;
 
     li {
-      margin-bottom: 8px;
+      a {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        width: 300px;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #00000034;
+        }
+
+        .lens {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* product view section */
+.product-box {
+  display: flex;
+  justify-content: space-between;
+
+  .product-img {
+    width: 40%;
+  }
+
+  .product-info {
+    width: 60%;
+    padding: 20px;
+
+    h1 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    span {
+      display: block;
+      text-align: right;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
   }
 }
